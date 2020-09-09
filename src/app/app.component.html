@@ -1,0 +1,16 @@
+<p>
+  using navigation with tab-key causes error on last example
+</p>
+<div>
+  <label for="showIconAndOnFocus">[showIcon]="true" [showOnFocus]="true"</label>
+  <p-calendar id="showIconAndOnFocus" [(ngModel)]="value" [showIcon]="true" [showOnFocus]="true"></p-calendar>
+</div>
+<div>
+  <label for="showOnFocus">[showIcon]="false" [showOnFocus]="true"</label>
+  <p-calendar id="showOnFocus" [(ngModel)]="value" [showIcon]="false" [showOnFocus]="true"></p-calendar>
+</div>
+<div>
+  <label for="showIcon" style="color: red">[showIcon]="true" [showOnFocus]="false" => error occurs</label>
+  <p-calendar id="showIcon" [(ngModel)]="value" [showIcon]="true" [showOnFocus]="false"></p-calendar>
+</div>
+
